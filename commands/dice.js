@@ -6,40 +6,8 @@ module.exports = {
 		let max = 6;
 		const rng = Math.floor(Math.random() * (max - min)) + min;
 		
-		switch (rng) {
-			case 1:
-				message.channel.send(`${rng}`);
-				break;
-
-				case 2:
-					message.channel.send(`${rng}`);
-					break;
-
-					case 3:
-						message.channel.send(`${rng}`);
-						break;
-
-						case 4:
-							message.channel.send(`${rng}`);
-							break;
-
-							case 5:
-								message.channel.send(`${rng}`);
-								break;
-
-								case 6:
-									message.channel.send(`${rng}`);
-									break;
-
-									default:
-										message.channel.send(`RNG returned invalid value, or not number between 1-6, returned: ${rng}`);
-											let author = message.author.id //message author ID
-											let authorname = message.author.username //message author current username
-											let authornamediscr = message.author.discriminator //message author discrimator
-											let guildid = message.guild.id
-											console.log(`an error has occured while trying to execute "RNG", command executed by ${author}(${authorname}#${authornamediscr}) in guild${guildid}`)
-										break;
-		}},};
+		message.channel.send(`${rng}`);
+	},};
 
 
 
